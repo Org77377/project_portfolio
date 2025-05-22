@@ -262,6 +262,10 @@ main .content{
     width:70%;
     height:80%;
 }
+#skill main{
+    display: flex;
+    flex-direction:column;
+}
 .skill-head{
     font-size:3.5rem; 
     background: -webkit-linear-gradient(200deg,rgb(199, 43, 43),rgb(124, 4, 76));
@@ -304,14 +308,82 @@ main .content{
     /* box-shadow: inset 4px 2px 10px 0px rgba(80, 20, 222, 0.765); */
     box-shadow: 0px 5px 30px 0px rgb(64, 40, 196);  
 }
-
+.tech{
+    display: flex;
+    gap:10px;
+    justify-content:space-evenly;
+}
+.t-logos{
+    height:50px;
+    width:50px;
+}
+.t-logos img{
+    height:100%;
+    width:100%;
+    animation:scal linear;
+    animation-timeline:view();
+    transition:all 0.5s ease;
+}
+.t-logos img:hover{
+    transform:translateY(-20px);
+}
+.certi{
+    border:2px solid white;
+    padding: 20px;
+    box-sizing: border-box;
+    display:grid;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    background-color: #da5050;
+    height:300px;
+    border-radius:20px;
+    position:relative;
+    transition:all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card::after{
+    content: '';
+    background-image: linear-gradient(360deg,blue,transparent);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0;
+    transition:all 0.5s ease;
+}
+.card:hover::after{
+    opacity: 1;
+}
+.card:hover > .c-txt{
+    visibility: visible;
+}
+.c-txt{
+    color: wheat;
+    visibility: hidden;
+}
 /* Animations */
+@keyframes scal{
+    0%{
+        filter:blur(10px);
+    }
+    40%,50%{
+        filter:blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+        transform:scale(2);
+    }
+}
 @keyframes skill{
     0%{
         filter: blur(40px);
         trasnform:scale(1.4);
-        height: 500px;
-        width: 500px;
+        height: 300px;
+        width: 300px;
     }
     40%, 60%{
         filter: blur(0px);
