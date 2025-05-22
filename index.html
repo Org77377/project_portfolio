@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Omkar RG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <input type="checkbox" name="toggle" id="toggle-check" class="toggle-btn" unchecked>
+    <header>
+        <nav>
+            <!-- Navigation Bar -->
+             <div class="logo">
+                <h1 alt="logo">Omkar RG</h1>
+             </div>
+             <ul class="nav-links">
+                <a href=""><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <li>Skill</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li><label for="toggle-check" class="toggle-items">
+                    <span class="light">☀️</span>
+                    <span class="dark">🌙</span>
+                </label></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="profile_pic">
+                    <img src="assets/p_pic.jpeg" class="img" alt="profile_pic">
+                </div>
+                <div class="intro_text">
+                    <p class="lg-txt">Hi I'm Omkar</p>
+                    <p class="sm-txt">A Web Developer</p><br><br>
+                    <button class="cv"><a href="assets/omkar_resume.pdf" download>Download CV</a></button>
+                    <div class="social_icons">
+                       <a href=""><i class="fa-brands fa-github"></i></a>
+                       <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                       <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                       <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <header>
+                    <h1>About Me</h1>
+                </header>
+
+                <main>
+                    <div class="p_pic">
+                        <img src="assets/p_pic.jpeg" alt="">
+                    </div>
+                    <p class="content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, eveniet et. Voluptatem accusantium at autem corporis, debitis nobis veniam similique atque architecto natus odit cupiditate quisquam temporibus placeat dolorum nostrum eum et ratione non voluptate saepe molestiae quia enim nesciunt!
+                    <br><br><button class="cv"><a href="assets/omkar_resume.pdf" download>Read More</a></button>
+                    </p>
+                </main>
+            </div>
+        </section>
+
+        <section id="skill">
+            <div class="container">
+                <header>
+                    <h1 class="skill-head">Skills</h1>
+                </header>
+
+                <main>
+                    <div class="skill-cont">
+                        <div class="skills skill-full"><i class="fa-solid fa-code" style="font-size:2rem"></i>
+                        <br>Web Development</div>
+                        <div class="skills skill-inter"><i class="fa-solid fa-pen-clip" style="font-size:2rem">
+                        </i> <br>Graphic Designig</div>
+                        <div class="skills skill-inter"><i class="fa-solid fa-video" style="font-size:2rem"></i>
+                        <br>Video Editing</div>
+                        <div class="skills skill-full"><i class="fa-solid fa-hexagon-nodes" style="font-size:2rem"></i>
+                        <br>Problem Solving</div>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <section id="services"></section>
+
+        <section id="contact"></section>
+    </main>
+</body>
+</html>
