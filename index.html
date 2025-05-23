@@ -1,134 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Omkar RG</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <input type="checkbox" name="toggle" id="toggle-check" class="toggle-btn" unchecked>
-    <header>
-        <nav>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Omkar RG</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <input type="checkbox" name="toggle" id="toggle-check"
+            class="toggle-btn" unchecked>
+        <header>
+
             <!-- Navigation Bar -->
-             <div class="logo">
-                <h1 alt="logo">Omkar RG</h1>
-             </div>
-             <ul class="nav-links">
-                <a href=""><li>Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <li>Skill</li>
-                <li>Services</li>
-                <li>Contact</li>
-                <li><label for="toggle-check" class="toggle-items">
-                    <span class="light">☀️</span>
-                    <span class="dark">🌙</span>
-                </label></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="home">
-            <div class="container">
-                <div class="profile_pic">
-                    <img src="assets/p_pic.jpeg" class="img" alt="profile_pic">
+
+            <nav>
+                <div class="logo">
+                    <h1 alt="main_logo">Omkar RG</h1>
                 </div>
-                <div class="intro_text">
-                    <p class="lg-txt">Hi I'm Omkar</p>
-                    <p class="sm-txt">A Web Developer</p><br><br>
-                    <button class="cv"><a href="assets/omkar_resume.pdf" download>Download CV</a></button>
-                    <div class="social_icons">
-                       <a href=""><i class="fa-brands fa-github"></i></a>
-                       <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                       <a href=""><i class="fa-brands fa-pinterest"></i></a>
-                       <a href=""><i class="fa-solid fa-envelope"></i></a>
+
+                <ul class="nav-links">
+                    <a href="#home">
+                        <li>Home</li>
+                    </a>
+                    <a href="#about">
+                        <li>About</li>
+                    </a>
+                    <a href="#skill">
+                        <li>Skill</li>
+                    </a>
+                    <a href="#services">
+                        <li>Services</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                    <li><label for="toggle-check" class="toggle-items">
+                            <span class="light">☀️</span>
+                            <span class="dark">🌙</span>
+                        </label></li>
+                </ul>
+
+                <!-- nav menu for mobile -->
+                <input type="checkbox" id="nav" checked>
+                <label for="nav"><i class="fa-solid fa-square-xmark wrong"
+                        style="z-index: 5;"></i></label>
+                <label for="nav"><i class="fa-solid fa-ellipsis menu-btn"
+                        style="color: red;"></i></label>
+                <div class="nav-menu">
+                    <ul class="nav-l-m">
+                        <a href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about">
+                            <li>About</li>
+                        </a>
+                        <a href="#skill">
+                            <li>Skill</li>
+                        </a>
+                        <a href="#services">
+                            <li>Services</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
+                        <li><label for="toggle-check" class="toggle-items">
+                                <span class="light">☀️</span>
+                                <span class="dark">🌙</span>
+                            </label></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+        <main>
+            <section id="home">
+                <div class="container">
+                    <div class="profile_pic">
+                        <img src="assets/p_pic.jpeg" class="img"
+                            alt="profile_pic">
+                    </div>
+                    <div class="intro_text">
+                        <p class="lg-txt">Hi I'm Omkar</p>
+                        <p class="sm-txt">A Web Developer</p><br><br>
+                        <button class="cv"><a href="assets/omkar_resume.pdf"
+                                download>Download CV</a></button>
+                        <div class="social_icons">
+                            <a href><i class="fa-brands fa-github"></i></a>
+                            <a href><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href><i class="fa-brands fa-pinterest"></i></a>
+                            <a href><i class="fa-solid fa-envelope"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="about">
-            <div class="container">
-                <header>
-                    <h1 style="font-size:3rem;margin-top:10px;margin-bottom: 0;">About Me</h1>
-                </header>
+            <!-- About Section -->
+            <section id="about">
+                <div class="container">
+                    <header>
+                        <h1 class="sm-txt"
+                            style="font-size:3rem;margin-top:10px;margin-bottom: 0;">About
+                            Me</h1>
+                    </header>
 
-                <main>
-                    <div class="p_pic">
-                        <img src="assets/p_pic.jpeg" alt="">
-                    </div>
-                    <p class="content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, eveniet et. Voluptatem accusantium at autem corporis, debitis nobis veniam similique atque architecto natus odit cupiditate quisquam temporibus placeat dolorum nostrum eum et ratione non voluptate saepe molestiae quia enim nesciunt!
-                    <br><br><button class="cv"><a href="assets/omkar_resume.pdf" download>Read More</a></button>
-                    </p>
-                </main>
-            </div>
-        </section>
-
-        <section id="skill">
-            <div class="container">
-                <header>
-                    <h1 class="skill-head" style="margin-right: 50px;">Skills</h1>
-                </header>
-
-                <main>
-                    <div class="skill-cont">
-                        <div class="skills skill-full"><i class="fa-solid fa-code" style="font-size:2rem"></i>
-                        <br>Web Development</div>
-                        <div class="skills skill-inter"><i class="fa-solid fa-pen-clip" style="font-size:2rem">
-                        </i> <br>Graphic Designig</div>
-                        <div class="skills skill-inter"><i class="fa-solid fa-video" style="font-size:2rem"></i>
-                        <br>Video Editing</div>
-                        <div class="skills skill-full"><i class="fa-solid fa-hexagon-nodes" style="font-size:2rem"></i>
-                        <br>Problem Solving</div>
-                    </div>
-                    <br>
-                    <p class="sm-txt">Tools & Technologies...</p>
-                    <div class="tech">
-                        <span class="t-logos">
-                            <img src="assets/logo/after-effects.png" alt="ae_logo">
-                        </span>        
-                        <span class="t-logos">
-                            <img src="assets/logo/photoshop.png" alt="photoshop_logo">
-                        </span>        
-                        <span class="t-logos">
-                            <img src="assets/logo/premiere-pro.png" alt="premiere-pro">
-                        </span>        
-                        <span class="t-logos">
-                            <img src="assets/logo/visual-studio.png" alt="vs_code">
-                        </span>        
-                        <span class="t-logos">
-                            <img src="assets/logo/voice.png" alt="arduino_logo">
-                        </span>        
-                    </div>
-                    <br><br>
-
-                    <p class="sm-txt" style="text-align: right;">Tools & Technologies...</p>
-                    <div class="certi">
-                        <div class="card">
-                            <div class="c-txt">asds</div>
+                    <main>
+                        <div class="p_pic">
+                            <img src="assets/p_pic.jpeg" alt>
                         </div>
-                        <div class="card">
-                            <div class="c-txt">asdasd</div>
+                        <p class="content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Atque, eveniet et. Voluptatem
+                            accusantium at autem corporis, debitis nobis veniam
+                            similique atque architecto natus odit
+                            cupiditate quisquam temporibus placeat dolorum
+                            nostrum eum et ratione non voluptate saepe
+                            molestiae quia enim nesciunt!
+                            <br><br><button class="cv"><a
+                                    href="assets/omkar_resume.pdf" download>Read
+                                    More</a></button>
+                        </p>
+                    </main>
+                </div>
+            </section>
+
+            <!-- Skill section -->
+            <section id="skill">
+                <div class="container">
+                    <header>
+                        <h1 class="skill-head sm-txt"
+                            style="margin-right: 50px;">Skills</h1>
+                    </header>
+
+                    <main>
+                        <div class="skill-cont">
+                            <div class="skills skill-full"><i
+                                    class="fa-solid fa-code"
+                                    style="font-size:2rem"></i>
+                                <br>Web Development
+                            </div>
+                            <div class="skills skill-inter"><i
+                                    class="fa-solid fa-pen-clip"
+                                    style="font-size:2rem">
+                                </i> <br>Graphic Designig</div>
+                            <div class="skills skill-inter"><i
+                                    class="fa-solid fa-video"
+                                    style="font-size:2rem"></i>
+                                <br>Video Editing
+                            </div>
+                            <div class="skills skill-full"><i
+                                    class="fa-solid fa-hexagon-nodes"
+                                    style="font-size:2rem"></i>
+                                <br>Problem Solving
+                            </div>
                         </div>
-                        <div class="card">
-                            <div class="c-txt">asds</div>
+                        <br>
+                        <p class="sm-txt">Tools & Technologies...</p>
+                        <div class="tech">
+                            <span class="t-logos">
+                                <img src="assets/logo/after-effects.png"
+                                    alt="ae_logo">
+                            </span>
+                            <span class="t-logos">
+                                <img src="assets/logo/photoshop.png"
+                                    alt="photoshop_logo">
+                            </span>
+                            <span class="t-logos">
+                                <img src="assets/logo/premiere-pro.png"
+                                    alt="premiere-pro">
+                            </span>
+                            <span class="t-logos">
+                                <img src="assets/logo/visual-studio.png"
+                                    alt="vs_code">
+                            </span>
+                            <span class="t-logos">
+                                <img src="assets/logo/voice.png"
+                                    alt="arduino_logo">
+                            </span>
                         </div>
-                        <div class="card">
-                            <div class="c-txt">asds</div>
+                        <br><br>
+
+                        <p class="sm-txt"
+                            style="text-align: right;">Certifications</p>
+
+                        <a href="assets/certi/apna_college.png" target="_top">
+                            <div class="certi">
+                                <div class="card">
+                                    <div class="img-cont">
+                                        <img src="assets/certi/apna_college.png"
+                                            alt>
+                                    </div>
+                                    <div class="c-txt">Apna College DSA
+                                        Certification</div>
+                                </div>
+                            </a>
+
+                            <a href="assets/certi/internshala.png"
+                                target="_top">
+                                <div class="card">
+                                    <div class="img-cont">
+                                        <img src="assets/certi/internshala.png"
+                                            alt>
+                                    </div>
+                                    <div class="c-txt">Internshala Full Stack
+                                        Certification</div>
+                                </div>
+                            </a>
+
+                            <a href="assets/certi/certi_comp.jpg" target="_top">
+                                <div class="card">
+                                    <div class="img-cont">
+                                        <img src="assets/certi/certi_comp.jpg"
+                                            alt>
+                                    </div>
+                                    <div class="c-txt">Coding compitition
+                                        Certification</div>
+                                </div>
+                            </a>
+                        </div>
+                        <br>
+                        <!-- Project Section -->
+                        <div class="projects">
+                            <p class="sm-txt">Projects</p>
+                            <br>
+                            <div class="card-p">
+                                <div class="proj">
+                                    <div class="title">
+                                        <i class="fa-solid fa-computer"></i>
+                                        Waste Segregation IOT
+                                    </div>
+                                    <div class="desc">
+                                        Waste identification and segregation in
+                                        diffrent
+                                        categories like metal waste, medical
+                                        waste, plastic waste
+                                        using Arduino and sensors like
+                                        ultrasonic, metal detector, soil
+                                        moisture sensor.
+                                    </div>
+                                </div>
+
+                                <div class="proj">
+                                    <div class="title">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                        AatmAI - AI Web App
+                                    </div>
+                                    <div class="desc">
+                                        Built an web app for metnal health and
+                                        students to help them with projects
+                                        notes, job search, resume etc using
+                                        gemini api and genkit framework.
+                                        <a
+                                            href="https://atma-ai-2.vercel.app/">Goto
+                                            Project</a>
+                                    </div>
+                                </div>
+
+                                <div class="proj">
+                                    <div class="title">
+                                        <i class="fa-solid fa-square-virus"></i>
+                                        Bacterial Colony Counter
+                                    </div>
+                                    <div class="desc">
+                                        Developed a bacterial colony counter to
+                                        automate the process of quantifying
+                                        bacterial growth
+                                        in petri dishes. Utilized image
+                                        processing techniques to detect and
+                                        count colonies
+                                        efficiently, reducing manual errors and
+                                        improving accuracy. Designed a
+                                        user-friendly
+                                        interface for data visualization and
+                                        analysis, making it suitable for
+                                        laboratory and
+                                        research applications.
+                                    </div>
+                                </div>
+
+                                <div class="proj">
+                                    <div class="title">
+                                        <i
+                                            class="fa-solid fa-mobile-screen-button"></i>
+                                        Chatbot Using PHP
+                                    </div>
+                                    <div class="desc">
+                                        Developed an interactive chatbot powered
+                                        by PHP to provide automated responses to
+                                        user
+                                        queries. Integrated natural language
+                                        processing (NLP) to enhance conversation
+                                        flow, making
+                                        it useful for customer support and other
+                                        automated services.
+                                    </div>
+                                </div>
+
+                                <div class="proj">
+                                    <div class="title">
+                                        <i class="fa-solid fa-photo-film"></i>
+                                        Image Haze Removal
+                                    </div>
+                                    <div class="desc">
+                                        Implemented an image processing solution
+                                        to remove haze from images, improving
+                                        visibility
+                                        and clarity. Utilized advanced dehazing
+                                        algorithms to enhance the contrast and
+                                        sharpness,
+                                        making it valuable for applications in
+                                        photography and surveillance.
+                                    </div>
+                                </div>
+
+                                <div class="proj">
+                                    <div class="title">
+                                        <i class="fa-solid fa-globe"></i>
+                                        Portfolio Website
+                                    </div>
+                                    <div class="desc">
+                                        Designed and developed a personal
+                                        portfolio website to showcase projects,
+                                        skills, and
+                                        achievements. Ensured a responsive and
+                                        visually appealing layout while
+                                        optimizing the site
+                                        for performance and user experience.
+                                    </div>
+                                </div>
+
+                                <div class="proj">
+                                    <div class="title">
+                                        <i
+                                            class="fa-solid fa-mobile-screen-button"></i>
+                                        E-Commerce Website
+                                    </div>
+                                    <div class="desc">Created a fully functional
+                                        e-commerce platform for online
+                                        transactions.
+                                        Implemented key features such as product
+                                        catalog management, shopping cart,
+                                        secure payments,
+                                        and user authentication, providing a
+                                        seamless shopping experience.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact">
+                    <div class="container">
+                        <header>
+                            <h1 class="sm-txt"
+                                style="text-align: center;">Contact Me</h1>
+                            <h4 style="text-align: center;">great things starts
+                                with a hello!</h4>
+                        </header>
+
+                        <main>
+                            <div class="small-co">
+                                Name : <input type="text">
+                                Mobile : <input type="tel">
+                                Email : <input type="email">
+                                Message : <textarea></textarea>
+                                <input type="submit" value="Submit">
+                            </div>
+                        </main>
+                    </div>
+                </section>
+
+                <!-- services section -->
+                <section id="services">
+                    <div class="container">
+                        <header>
+                            <h1 class="sm-txt"
+                                style="text-align: center;">Services I
+                                Provide</h1>
+                        </header>
+                        <br>
+                        <main>
+                            <div class="service">
+                                <h2 class="ser-head">Web Development</h2>
+                                <h2 class="ser-head">Video Editig</h2>
+                                <h2 class="ser-head">Graphic Designing</h2>
+                                <h2 class="ser-head">Cinematography</h2>
+                                <h2 class="ser-head">Logo Designing</h2>
+                                <h2 class="ser-head">drop a hello now!</h2>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+
+                <!-- footer section -->
+                <footer class="foot">
+                    <div class="container">
+                        <div class="f-social">
+                            <span class="sm-txt">Get in touch</span>
+                        </div>
+
+                        <div class="f-social">
+                            <a href="mailto:omkarrg@hotmail.com"><i
+                                    class="fa-solid fa-envelope sm-txt icon"></i></a>
+                            <a href="tel:7406522116"><i
+                                    class="fa-brands fa-square-whatsapp sm-txt icon"></i></a>
+                            <a href="https://www.linkedin.com/in/omkar-rg/"
+                                target="_blank"><i
+                                    class="fa-brands fa-linkedin sm-txt icon"></i></a>
                         </div>
                     </div>
-                </main>
-            </div>
-        </section>
+                </footer>
+            </main>
+        </body>
 
-        <section id="services">
-
-        </section>
-
-        <section id="contact"></section>
-    </main>
-</body>
-</html>
+    </html>
