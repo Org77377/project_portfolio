@@ -222,7 +222,12 @@ main .content{
     animation-timeline: view();
     flex-shrink:2;
 }
-
+main .p_pic{
+    width:30%;
+}
+main .content{
+    width:65%;
+}
 /* animations */
 @keyframes slide{
     0%{
