@@ -728,6 +728,12 @@ input[type="submit"]{
         justify-content: flex-start;
         margin-left: 10px;
     }
+    main .p_pic{
+        width:30%;
+    }
+    main .content{
+        width:65%;
+    }
 
     /* Skill section*/
     #skill .container{
