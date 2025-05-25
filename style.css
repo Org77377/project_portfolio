@@ -220,6 +220,7 @@ main .p_pic img{
 main .content{
     animation: opa linear;
     animation-timeline: view();
+    flex-shrink:2;
 }
 
 /* animations */
