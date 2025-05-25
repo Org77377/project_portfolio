@@ -728,7 +728,10 @@ input[type="submit"]{
         justify-content: flex-start;
         margin-left: 10px;
     }
-    main .p_pic, .content{
+    main .p_pic{
+        width:98%;
+    }
+    main .content{
         width:98%;
     }
 
