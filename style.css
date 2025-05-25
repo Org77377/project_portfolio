@@ -589,7 +589,7 @@ input[type="submit"]{
     text-shadow: 0px 0px 50px rgb(0, 255, 110);
 }
 
-.dark{
+/* .dark{
     display: none;
 }
 .toggle-btn:checked ~ header nav label .light{
@@ -604,7 +604,54 @@ input[type="submit"]{
 .toggle-btn:checked ~ body{
     background-color: #f4ecff;
 }
+ */
+.dark{
+    display: none;
+}
+.toggle-btn:checked ~ main #home{
+    background-color: #f4ecff;
+}
+.toggle-btn:checked ~ main #about{
+    background-color: #f4ecff;
+}
+.toggle-btn:checked ~ main #skill{
+    background-color: #f4ecff;
+}
+.toggle-btn:checked ~ main #contact{
+    background-color: #f4ecff;
+}
+.toggle-btn:checked ~ main #services{
+    background-color: #f4ecff;
+}
+.toggle-btn:checked ~ main .foot{
+    background-color: #f4ecff;
+}
+.toggle-btn:checked ~ main #home i{
+    color:black;
+}
+.toggle-btn:checked ~ main button{
+    background-color: #006ee6;
+}
+.toggle-btn:checked ~ main button a{
+    color:rgb(243, 255, 246);
+}
+.toggle-btn:checked ~ main .small-co,h4{
+    color:rgb(7, 207, 57);
+    font-weight:500;
+}
+.toggle-btn:checked ~ main #about p{
+    color:black;
+}
 
+.toggle-btn:checked ~ header nav label .light{
+    display: none;
+}
+.toggle-btn:checked ~ header nav label .dark{
+    display: inline;
+}
+.light, .dark{
+    user-select: none;
+}
 
 /* responsive for mobile device (s8+) */
 @media(max-width:500px){
